@@ -1,0 +1,51 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+/* https://fontawesome.com/icons */
+/* 旋转：fa-spin */
+@import "src/header.css";
+@import "src/button.css";
+
+body{
+    background-color: rgb(233,233,233);
+    --topan-colors-main: rgb(63, 94, 160);
+    --topan-footer-height: 130px;
+}
+.topan-outer{
+    position: fixed;
+    top: 50px; left: 0px;
+    width: 100%;
+    height: calc(100% - 50px);
+    overflow-x: auto;
+	margin: 0; padding: 0;
+}
+.topan-page{
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	position: relative;
+}
+.topan-mainpage{
+	margin: 0 auto;
+	padding-bottom: var(--topan-footer-height);
+}
+.topan-footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: var(--topan-footer-height);
+	clear: both;
+    background: white;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.topan-left-5px{
+    position: relative;
+    left: 5px;
+}
+.topan-right-5px{
+    position: relative;
+    right: 5px;
+}
