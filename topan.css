@@ -3,12 +3,19 @@
 /* 旋转：fa-spin */
 @import "src/header.css";
 @import "src/button.css";
+@import "src/tab.css";
 
 body{
     background-color: rgb(233,233,233);
     --topan-colors-main: rgb(63, 94, 160);
+    --topan-colors-stress: rgb(206, 52, 129);
     --topan-footer-height: 130px;
 }
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 .topan-outer{
     position: fixed;
     top: 50px; left: 0px;
@@ -20,11 +27,11 @@ body{
 .topan-page{
 	min-height: 100%;
 	height: auto !important;
-	height: 100%;
 	position: relative;
 }
-.topan-mainpage{
-	margin: 0 auto;
+.topan-mainpage,.topan-mainpage-auto{
+    margin-right: auto;
+    margin-left: auto;
 	padding-bottom: var(--topan-footer-height);
 }
 .topan-footer{
@@ -36,9 +43,16 @@ body{
     background: white;
 }
 
-a{
-    text-decoration: none;
-    color: inherit;
+.topan-mainpage-auto{
+    box-sizing: border-box;
+
+    width: 80%;
+    max-width: 1200px;
+}
+@media screen and (max-width: 750px){
+    .topan-mainpage-auto{
+        width: 87%;
+    }
 }
 
 .topan-left-5px{
