@@ -4,6 +4,7 @@
 @import "src/header.css";
 @import "src/button.css";
 @import "src/tab.css";
+@import "src/markdown.css";
 
 body{
     background-color: rgb(233,233,233);
@@ -11,7 +12,16 @@ body{
     --topan-colors-stress: rgb(206, 52, 129);
     --topan-footer-height: 130px;
 }
+
 a{
+    text-decoration: none;
+    color: inherit;
+    transition-duration: 0.25s;
+}
+a:hover{
+    color: rgb(86, 148, 199);
+}
+.topan-header a{
     text-decoration: none;
     color: inherit;
 }
@@ -55,11 +65,9 @@ a{
     }
 }
 
-.topan-left-5px{
-    position: relative;
-    left: 5px;
+.topan-center{
+    text-align: center;
 }
-.topan-right-5px{
-    position: relative;
-    right: 5px;
+img.topan-roundimage{
+    border-radius: 50%;
 }

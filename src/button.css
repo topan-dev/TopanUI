@@ -38,7 +38,7 @@
         bottom: 16px;
     }
 }
-.topan-button-header-block{
+.topan-button-header-block,.topan-button-header-block-showed{
     height: 50px;
     position: sticky;
     box-sizing: border-box;
@@ -50,4 +50,7 @@
 }
 .topan-button-header-block:hover{
     border-bottom: solid 3px var(--topan-colors-main);
+}
+.topan-button-header-block-showed{
+    border-bottom: solid 3px var(--topan-colors-stress);
 }
