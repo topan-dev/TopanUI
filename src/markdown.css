@@ -63,3 +63,8 @@ p.markdown-content-small{
 	white-space: nowrap;
 	text-overflow: ellipsis;
 }
+
+@font-face{
+	font-family: font-codetext;
+	src: url("../fonts/consola.ttf");
+}

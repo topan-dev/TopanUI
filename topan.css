@@ -4,6 +4,8 @@
 @import "src/header.css";
 @import "src/button.css";
 @import "src/tab.css";
+@import "src/section.css";
+@import "src/highlight.css";
 @import "src/markdown.css";
 
 body{
@@ -11,6 +13,8 @@ body{
     --topan-colors-main: rgb(63, 94, 160);
     --topan-colors-stress: rgb(206, 52, 129);
     --topan-footer-height: 130px;
+    --markdown-codeblock-bordercolor: var(--topan-colors-main);
+    --markdown-codeblock-copybutton: "复制";
 }
 
 a{

@@ -3,50 +3,20 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        <title id="title">Topan User Interface</title>
+        <title id="title">Docs - Topan User Interface</title>
         <!-- <script src="https://cdn.jsdelivr.net/gh/topan-dev/TopanUI@master/src/jquery.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/topan-dev/TopanUI@master/topan.css">
         <script src="https://cdn.jsdelivr.net/gh/topan-dev/TopanUI@master/topan.js"></script> -->
         <script src="src/jquery.js"></script>
         <link rel="stylesheet" href="topan.css">
         <script src="topan.js"></script>
-        <style>
-            h1{
-                font-weight: 500;
-            }
-            h1 span{
-                color: rgb(165, 138, 51);
-                font-weight: bold;
-            }
-            h3#members{
-                color: rgb(51, 129, 165);
-            }
-
-            .membercard{
-                display: block;
-                position: relative;
-                float: left;
-                width: 420px;
-                background: white;
-                border-radius: 50px;
-                height: 100px;
-                box-shadow: 0 2px 8px -1px rgba(0,0,0,0.2);
-            }
-            .membercard>img{
-                float: left;
-            }
-            .membercard>div{
-                padding-left: 120px;
-            }
-            .membercard>div>h3{
-                font-size: 20px;
-                line-height: 22px;
-            }
-            .membercard>div>p{
-                color: grey;
-                font-size: 12px;
-            }
-        </style>
+        <script>
+            $(document).ready(function(){
+                TopanSystem.loadfile('https://molmin.github.io/blog/datas/b295a161b8b0e06919c846cf3b9ed9c7.md',function(md){
+                    $('.topan-mainpage-auto>div').html(Markdown.sys(md));
+                })
+            });
+        </script>
     </head>
     <body>
         <div class="topan-header">
@@ -58,14 +28,14 @@
                 </a>
             </div>
             <div class="topan-header-left">
-                <span class="topan-header-text">Topan Dev&nbsp;</span>
+                <span class="topan-header-text">TopanUI&nbsp;</span>
                 <a href="/r/TopanUI">
-                    <span class="topan-button-ordinary topan-button-commonly topan-button-header-block">
-                        <i class="fa fa-solid fa-umbrella"></i>
-                        <span>&nbsp;Repositories</span>
+                    <span class="topan-button-ordinary topan-button-commonly topan-button-header-block-showed">
+                        <i class="fa fa-solid fa-book"></i>
+                        <span>&nbsp;Docs</span>
                     </span>
                 </a>
-                <a href="https://github.com/topan-dev/">
+                <a href="https://github.com/topan-dev/TopanUI">
                     <span class="topan-button-ordinary topan-button-commonly topan-button-header-block">
                         <i class="fa fa-brands fa-github"></i>
                         <span>&nbsp;GitHub</span>
@@ -84,16 +54,8 @@
             <div class="topan-page">
                 <div class="topan-mainpage-auto">
                     <br>
-                    <h1 class="topan-center"><span>T</span>o<span>p</span>an <span>Dev</span>elopment Group</h1>
-                    <h3 id="members"><i class="fa fa-solid fa-users"></i>&nbsp;&nbsp;Members</h3>
-                    <div class="membercard">
-                        <img src="https://molmin.github.io/file/image/head.png" width="100px" height="100px" class="topan-roundimage">
-                        <div>
-                            <h3>Milmon</h3>
-                            <p><i class="fa fa-solid fa-envelope"></i>&nbsp;&nbsp;milmon@qq.com&nbsp;&nbsp;&nbsp;<a href="https://github.com/Molmin/"><i class="fa fa-brands fa-github"></i>&nbsp;&nbsp;GitHub</a></p>
-                        </div>
-                    </div>
-                    <div style="display: block; position: relative; float: left; width: 10px;">&nbsp;</div>
+                    <div class="topan-section-shadow"></div>
+                    <br>
                 </div>
                 <footer class="topan-footer">
                     <p></p>
