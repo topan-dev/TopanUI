@@ -4,9 +4,17 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
         <title id="title">Docs - Topan User Interface</title>
-        <!-- <script src="https://cdn.jsdelivr.net/gh/topan-dev/TopanUI@master/src/jquery.js"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/topan-dev/TopanUI@master/topan.css">
-        <script src="https://cdn.jsdelivr.net/gh/topan-dev/TopanUI@master/topan.js"></script> -->
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config(
+                {
+                    tex2jax: {
+                        inlineMath: [['$','$']], 
+                        displayMath: [['$$','$$']]
+                    }
+                }
+            );
+        </script>
+        <script src="https://includemathjax.github.io/MathJax/MathJax.js?config=TeX-MML-AM_CHTML"></script>
         <script src="src/jquery.js"></script>
         <link rel="stylesheet" href="topan.css">
         <script src="topan.js"></script>
@@ -14,6 +22,7 @@
             $(document).ready(function(){
                 TopanSystem.loadfile('https://molmin.github.io/blog/datas/b295a161b8b0e06919c846cf3b9ed9c7.md',function(md){
                     $('.topan-mainpage-auto>div').html(Markdown.sys(md));
+                    MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
                 })
             });
         </script>
@@ -60,7 +69,7 @@
                 <footer class="topan-footer">
                     <p></p>
                     <p style="text-align: center; color: #555; font-size: 12px;">
-                        Copyright (C) 2022 <a href="https://github.com/topan-dev/">Topan Development Group</a>. Released under the MIT License.
+                        Copyright (c) 2022 <a href="https://github.com/topan-dev/">Topan Development Group</a>. Released under the MIT License.
                     </p>
                 </footer>
             </div>

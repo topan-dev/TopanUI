@@ -45,6 +45,8 @@ span.markdown{
 	margin-left: 15px;
 	line-height: 150%;
 	font-family: "font-codetext";
+	tab-size: 4;
+	-moz-tab-size: 4;
 }
 
 p.markdown-content-large{
