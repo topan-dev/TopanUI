@@ -5,12 +5,14 @@
 @import "src/button.css";
 @import "src/tab.css";
 @import "src/section.css";
+@import "src/table.css";
 @import "src/highlight.css";
 @import "src/markdown.css";
 
 body{
     background-color: rgb(233,233,233);
     --topan-colors-main: rgb(63, 94, 160);
+    --topan-colors-main-modify1: rgb(63, 94, 160, 0.08);
     --topan-colors-stress: rgb(206, 52, 129);
     --topan-footer-height: 130px;
     --markdown-codeblock-bordercolor: var(--topan-colors-main);
