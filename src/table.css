@@ -7,8 +7,8 @@ table{
 }
 table td,table th{
     border: 1px solid var(--topan-colors-main);
-    color: var(--topan-colors-main);
-    min-width: 50px;
+    word-break: break-word;
+    padding: 1px 8px 1px 8px !important;
 }
 table th{
     border-right-color: white;
