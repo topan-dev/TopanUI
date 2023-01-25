@@ -11,16 +11,16 @@
     transition-property: all;
 }
 .topan-button-emphasize{
-    background-color: var(--topan-color-emphasize);
+    background-color: var(--topan-colors-main);
 }
 .topan-button-emphasize:hover{
-    background-color: rgba(255,255,255,0.2);
+    background-color: var(--topan-colors-main-modify2);
 }
 .topan-button-commonly{
     background-color: transparent;
 }
 .topan-button-commonly:hover{
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0,0,0,0.08);
 }
 
 .topan-button-header-round-left,.topan-button-header-round-right{
@@ -53,4 +53,12 @@
 }
 .topan-button-header-block-showed{
     border-bottom: solid 3px var(--topan-colors-stress);
+}
+
+.topan-button-default{
+    padding: 8px 14px;
+    border-radius: 20px;
+}
+.topan-button-default.topan-button-emphasize{
+    color: white;
 }

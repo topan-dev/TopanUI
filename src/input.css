@@ -1,0 +1,14 @@
+input{
+    border-radius: 10px;
+    border: 1px solid grey;
+    padding: 8px 10px;
+    width: 100%;
+    transition-duration: 0.28s;
+}
+input:hover{
+    border: 1px solid var(--topan-colors-stress);
+}
+input:focus{
+    box-shadow: 0 0 0 3px var(--topan-colors-stress-modify1);
+    border: 1px solid var(--topan-colors-stress);
+}

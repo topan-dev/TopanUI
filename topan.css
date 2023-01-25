@@ -3,6 +3,7 @@
 /* 旋转：fa-spin */
 @import "src/header.css";
 @import "src/button.css";
+@import "src/input.css";
 @import "src/tab.css";
 @import "src/section.css";
 @import "src/table.css";
@@ -13,7 +14,9 @@ body{
     background-color: rgb(233,233,233);
     --topan-colors-main: rgb(63, 94, 160);
     --topan-colors-main-modify1: rgb(63, 94, 160, 0.08);
+    --topan-colors-main-modify2: rgb(104, 136, 199);
     --topan-colors-stress: rgb(206, 52, 129);
+    --topan-colors-stress-modify1: rgb(206, 52, 129, 0.3);
     --topan-footer-height: 130px;
     --markdown-codeblock-bordercolor: var(--topan-colors-main);
     --markdown-codeblock-copybutton: "复制";
