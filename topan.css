@@ -24,11 +24,11 @@ body{
 
 a{
     text-decoration: none;
-    color: inherit;
+    color: rgb(86, 148, 199);
     transition-duration: 0.25s;
 }
 a:hover{
-    color: rgb(86, 148, 199);
+    text-decoration: underline;
 }
 .topan-header a{
     text-decoration: none;

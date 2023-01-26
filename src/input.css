@@ -6,7 +6,7 @@ input{
     transition-duration: 0.28s;
 }
 input:hover{
-    border: 1px solid var(--topan-colors-stress);
+    border: 1px solid var(--topan-colors-main);
 }
 input:focus{
     box-shadow: 0 0 0 3px var(--topan-colors-stress-modify1);
