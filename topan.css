@@ -34,7 +34,7 @@ a{
 a:hover{
     color: var(--topan-colors-link-hover);
 }
-a:not(.topan-header)::after{
+a:not(.topan-header *)::after{
     content: "";
     width: 0;
     height: 1px;
@@ -43,7 +43,7 @@ a:not(.topan-header)::after{
     left: 0;
     transition: all .3s;
 }
-a:hover:not(.topan-header)::after{
+a:hover:not(.topan-header *)::after{
     width: 100%;
     background: var(--topan-colors-link-hover);
 }
