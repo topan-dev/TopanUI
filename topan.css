@@ -17,6 +17,8 @@ body{
     --topan-colors-main-modify2: rgb(104, 136, 199);
     --topan-colors-stress: rgb(206, 52, 129);
     --topan-colors-stress-modify1: rgb(206, 52, 129, 0.3);
+    --topan-colors-link: rgb(86, 148, 199);
+    --topan-colors-link-hover: rgb(53, 114, 165);
     --topan-footer-height: 130px;
     --markdown-codeblock-bordercolor: var(--topan-colors-main);
     --markdown-codeblock-copybutton: "复制";
@@ -24,11 +26,26 @@ body{
 
 a{
     text-decoration: none;
-    color: rgb(86, 148, 199);
+    color: var(--topan-colors-link);
     transition-duration: 0.25s;
+    position: relative;
+    transition: all .3s;
 }
 a:hover{
-    text-decoration: underline;
+    color: var(--topan-colors-link-hover);
+}
+a:not(.topan-header)::after{
+    content: "";
+    width: 0;
+    height: 1px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: all .3s;
+}
+a:hover:not(.topan-header)::after{
+    width: 100%;
+    background: var(--topan-colors-link-hover);
 }
 .topan-header a{
     text-decoration: none;

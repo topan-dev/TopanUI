@@ -1,14 +1,15 @@
-input{
+input[type="text"],input[type="password"]{
     border-radius: 10px;
     border: 1px solid grey;
     padding: 8px 10px;
     width: 100%;
     transition-duration: 0.28s;
+    box-sizing: border-box;
 }
-input:hover{
+input[type="text"]:hover,input[type="password"]:hover{
     border: 1px solid var(--topan-colors-main);
 }
-input:focus{
+input[type="text"]:focus,input[type="password"]:focus{
     box-shadow: 0 0 0 3px var(--topan-colors-stress-modify1);
     border: 1px solid var(--topan-colors-stress);
 }
