@@ -1,7 +1,7 @@
 .topan-tab{
     width: 100%;
 }
-.topan-tab *{
+.topan-tab>div,.topan-tab>ul,.topan-tab>ul>li{
     margin: 0px; padding: 0px;
     transition-duration: 0.15s;
 }
@@ -41,4 +41,5 @@
 }
 .topan-tab div.topan-tab-showed{
     display: block;
+    padding: 0;
 }
