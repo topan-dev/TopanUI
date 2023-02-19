@@ -1,8 +1,10 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
 @import "https://cdn.bootcdn.net/ajax/libs/font-awesome/6.2.1/css/all.min.css";
 /* https://fontawesome.com/icons */
 /* 旋转：fa-spin */
 @import "src/header.css";
 @import "src/button.css";
+@import "src/input.css";
 @import "src/tab.css";
 @import "src/section.css";
 @import "src/table.css";
@@ -13,7 +15,11 @@ body{
     background-color: rgb(233,233,233);
     --topan-colors-main: rgb(63, 94, 160);
     --topan-colors-main-modify1: rgb(63, 94, 160, 0.08);
+    --topan-colors-main-modify2: rgb(104, 136, 199);
     --topan-colors-stress: rgb(206, 52, 129);
+    --topan-colors-stress-modify1: rgb(206, 52, 129, 0.3);
+    --topan-colors-link: rgb(86, 148, 199);
+    --topan-colors-link-hover: rgb(53, 114, 165);
     --topan-footer-height: 130px;
     --markdown-codeblock-bordercolor: var(--topan-colors-main);
     --markdown-codeblock-copybutton: "复制";
@@ -21,15 +27,31 @@ body{
 
 a{
     text-decoration: none;
-    color: inherit;
+    color: var(--topan-colors-link);
     transition-duration: 0.25s;
+    position: relative;
+    transition: all .3s;
 }
 a:hover{
-    color: rgb(86, 148, 199);
+    color: var(--topan-colors-link-hover);
+}
+a::after{
+    content: "";
+    width: 0; height: 1px;
+    position: absolute;
+    top: 100%; left: 0;
+    transition: all .3s;
+}
+a:hover::after{
+    width: 100%;
+    background: var(--topan-colors-link-hover);
 }
 .topan-header a{
     text-decoration: none;
     color: inherit;
+}
+.topan-header a::after{
+    opacity: 0;
 }
 
 .topan-outer{
