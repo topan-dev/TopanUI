@@ -1,0 +1,26 @@
+blockquote{
+    margin: .5rem 0 1rem;
+    padding: 1px 10px;
+
+    border-radius: 8px;
+    border-left: 4px solid #727272;
+    background: rgba(0, 0, 0, .1);
+}
+blockquote.topan-blockquote-tip{
+    border-left-color: #ff993a;
+    background: rgba(255, 136, 0, 0.1);
+}
+blockquote.topan-blockquote-tip::before{
+    content: "TIP";
+    color: #ff993a;
+    font-size: 14px;
+}
+blockquote.topan-blockquote-warning{
+    border-left-color: #ff443a;
+    background: rgba(255, 0, 0, .1);
+}
+blockquote.topan-blockquote-warning::before{
+    content: "WARNING";
+    color: #ff443a;
+    font-size: 14px;
+}
