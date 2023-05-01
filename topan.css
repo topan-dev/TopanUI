@@ -1,7 +1,10 @@
-@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
-@import "https://cdn.bootcdn.net/ajax/libs/font-awesome/6.2.1/css/all.min.css";
-/* https://fontawesome.com/icons */
-/* 旋转：fa-spin */
+/* 
+<script src="https://topan-dev.github.io/TopanUI/src/jquery.js"></script>
+<link rel="stylesheet" href="https://topan-dev.github.io/TopanUI/topan.css">
+<script src="https://topan-dev.github.io/TopanUI/topan.js"></script>
+<script src="https://kit.fontawesome.com/0d8081718e.js" crossorigin="anonymous"></script>
+https://fontawesome.com/icons
+*/
 @import "src/header.css";
 @import "src/button.css";
 @import "src/input.css";
