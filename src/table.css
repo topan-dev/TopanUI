@@ -12,11 +12,13 @@ table td,table th{
 }
 table th{
     border-right-color: white;
+    border-bottom-color: white;
     background-color: var(--topan-colors-main);
     color: white;
 }
 table th:last-child{
     border: 1px solid var(--topan-colors-main);
+    border-bottom-color: white;
 }
 table tr:nth-child(odd){
     background: var(--topan-colors-main-modify1);

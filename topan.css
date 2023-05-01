@@ -8,6 +8,7 @@
 @import "src/tab.css";
 @import "src/section.css";
 @import "src/table.css";
+@import "src/menu.css";
 @import "src/blockquote.css";
 @import "src/highlight.css";
 @import "src/markdown.css";
@@ -33,22 +34,25 @@ a{
     position: relative;
     transition: all .3s;
 }
-a:hover{
+a:not(.topan-menu-option):hover{
     color: var(--topan-colors-link-hover);
 }
-a::after{
+a:not(.topan-menu-option)::after{
     content: "";
     width: 0; height: 1px;
     position: absolute;
     top: 100%; left: 0;
     transition: all .3s;
 }
-a:hover::after{
+a:not(.topan-menu-option):hover::after{
     width: 100%;
     background: var(--topan-colors-link-hover);
 }
 .topan-header a{
     text-decoration: none;
+    color: inherit;
+}
+.topan-header a:hover{
     color: inherit;
 }
 .topan-header a::after{
