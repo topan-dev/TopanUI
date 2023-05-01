@@ -1,0 +1,50 @@
+.topan-fold{
+    border: var(--topan-colors-main) solid 1px;
+    border-radius: 5px;
+}
+::-webkit-details-marker{
+    display: none;
+}
+details ::-moz-list-bullet{
+    font-size: 0;
+    float: left;
+}
+summary{
+    color: white;
+    padding: 6px 15px;
+    user-select: none;
+    outline: 0;
+    font-weight: bold;
+    transition: color .2s;
+    background-color: #20619e;
+}
+summary:hover{
+    cursor: pointer;
+    color: #b6c6d4;
+}
+summary::after{
+    content: '';
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    margin: 4px 0 0 .5ch;
+    background: url(/file/angle-up-solid.svg) no-repeat;
+    background-size: 100% 100%;
+    transition: transform .2s;
+    transform: rotate(90deg);
+}
+[open] summary::after{
+    transform: rotate(180deg);
+}
+dl{
+    padding: 0 15px;
+}
+details+dl{
+    max-height: 0;
+    transition: max-height .25s;
+    margin: 0;
+    overflow: hidden;
+}
+[open]+dl{
+    max-height: 10000px;
+}
