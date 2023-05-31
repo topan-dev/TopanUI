@@ -24,3 +24,12 @@ blockquote.topan-blockquote-warning::before{
     color: #ff443a;
     font-size: 14px;
 }
+blockquote.topan-blockquote-note{
+    border-left-color: #3aa6ff;
+    background: rgba(58, 166, 255, 0.15);
+}
+blockquote.topan-blockquote-note::before{
+    content: "NOTE";
+    color: #3aa6ff;
+    font-size: 14px;
+}
