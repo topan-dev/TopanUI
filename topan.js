@@ -11,6 +11,7 @@ var TopanSystem={
 
 function topan_init_all(){
     topan_init_tabs();
+    topan_init_codes();
 }
 $(document).ready(function(){
     topan_init_all();
@@ -25,4 +26,34 @@ function topan_init_tabs(){
             $(this.parentElement.parentElement.children.item($(this).index()+1)).addClass("topan-tab-showed");
         }
     });
+}
+
+function topan_init_codes(){
+    var prelist=$("pre");
+    prelist.each(function(){
+        let button=$("<span class='button-copy btn'></span>");
+        button.attr("onclick","copy(this);");
+        button.prependTo($(this));
+    });
+}
+
+var copy=(obj)=>{
+    navigator.clipboard.writeText($(obj).parent().text())
+        .then(()=>{
+            $(obj).text('复制成功！');
+            $(obj).addClass('button-copy-success');
+            setTimeout(()=>{
+                $(obj).removeClass('button-copy-success');
+                $(obj).text('');
+            },1000);
+        })
+        .catch(err=>{
+            $(obj).text('复制失败。');
+            console.log(err);
+            $(obj).addClass('button-copy-fail');
+            setTimeout(()=>{
+                $(obj).removeClass('button-copy-fail');
+                $(obj).text('');
+            },1000);
+        });
 }

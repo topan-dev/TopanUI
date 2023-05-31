@@ -1,0 +1,52 @@
+.row:after{
+    clear: both;
+}
+.row:before,.row:after{
+    content: " ";
+    display: table;
+}
+.row{
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.column-one-second{
+    width: 50%;
+    float: left;
+}
+.column-one-third{
+    width: 33.33333333%;
+    float: left;
+}
+.column-two-third{
+    width: 66.66666667%;
+    float: left;
+}
+.column-one-fourth{
+    width: 25%;
+    float: left;
+}
+.column-two-fourth{
+    width: 50%;
+    float: left;
+}
+.column-three-fourth{
+    width: 75%;
+    float: left;
+}
+.column-one-fifth{
+    width: 20%;
+    float: left;
+}
+.column-two-fifth{
+    width: 40%;
+    float: left;
+}
+.column-three-fifth{
+    width: 60%;
+    float: left;
+}
+.column-four-fifth{
+    width: 80%;
+    float: left;
+}

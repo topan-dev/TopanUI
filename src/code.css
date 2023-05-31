@@ -1,0 +1,33 @@
+.button-copy{
+    font-family: "楷体";
+    float: right;
+    margin-right: 10px; margin-top: 10px;
+    cursor: pointer;
+    --button-color: var(--topan-colors-main);
+}
+.button-copy-success{
+    color: green;
+}
+.button-copy-fail{
+    color: red;
+}
+.button-copy:hover{
+    --button-color: var(--topan-colors-stress);
+}
+.button-copy:not(.button-copy-success,.button-copy-fail)::before{
+    box-sizing: inherit;
+    background-color: var(--button-color);
+    content: "";
+    display: block;
+    height: 18px; width: 18px;
+    margin: 0 auto;
+    -webkit-mask-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12V1Z"/></svg>');
+    mask-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12V1Z"/></svg>');
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    transition: background-color .2s;
+}
