@@ -1,4 +1,8 @@
-input:not(input[type]),input[type="text"],input[type="password"],input[type="url"],input[type="tel"],input[type="search"],input[type="number"],input[type="email"],input[type="range"]{
+input:not(input[type]),input[type="text"],
+    input[type="password"],input[type="url"],
+    input[type="tel"],input[type="search"],
+    input[type="number"],input[type="email"],
+    input[type="range"]{
     border-radius: 10px;
     border: 1px solid grey;
     padding: 8px 10px;
@@ -6,10 +10,18 @@ input:not(input[type]),input[type="text"],input[type="password"],input[type="url
     transition-duration: 0.28s;
     box-sizing: border-box;
 }
-input:not(input[type]),input[type="text"],input[type="password"],input[type="url"],input[type="tel"],input[type="search"],input[type="number"],input[type="email"],input[type="range"]:hover{
+input:not(input[type]):hover,input[type="text"]:hover,
+    input[type="password"]:hover,input[type="url"]:hover,
+    input[type="tel"]:hover,input[type="search"]:hover,
+    input[type="number"]:hover,input[type="email"]:hover,
+    input[type="range"]:hover{
     border: 1px solid var(--topan-colors-main);
 }
-input:not(input[type]),input[type="text"],input[type="password"],input[type="url"],input[type="tel"],input[type="search"],input[type="number"],input[type="email"],input[type="range"]:focus{
+input:not(input[type]):focus,input[type="text"]:focus,
+    input[type="password"]:focus,input[type="url"]:focus,
+    input[type="tel"]:focus,input[type="search"]:focus,
+    input[type="number"]:focus,input[type="email"]:focus,
+    input[type="range"]:focus{
     box-shadow: 0 0 0 3px var(--topan-colors-stress-modify1);
     border: 1px solid var(--topan-colors-stress);
 }
