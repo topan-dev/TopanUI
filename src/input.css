@@ -38,3 +38,4 @@ input:not(input[type]):focus,input[type="text"]:focus,
 select:focus{
     box-shadow: 0 0 0 3px var(--topan-colors-stress-modify1);
     border: 1px solid var(--topan-colors-stress);
+}
