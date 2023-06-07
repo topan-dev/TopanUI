@@ -31,7 +31,7 @@ function topan_init_tabs(){
 function topan_init_codes(){
     var prelist=$("pre");
     prelist.each(function(){
-        let button=$("<span class='button-copy btn'></span>");
+        let button=$("<span class='button-copy button-copy-status btn'></span>");
         button.attr("onclick","copy(this);");
         button.prependTo($(this));
     });
@@ -42,8 +42,10 @@ var copy=(obj)=>{
         .then(()=>{
             $(obj).text('复制成功！');
             $(obj).addClass('button-copy-success');
+            $(obj).removeClass('button-copy-status');
             setTimeout(()=>{
                 $(obj).removeClass('button-copy-success');
+                $(obj).addClass('button-copy-status');
                 $(obj).text('');
             },1000);
         })
@@ -51,8 +53,10 @@ var copy=(obj)=>{
             $(obj).text('复制失败。');
             console.log(err);
             $(obj).addClass('button-copy-fail');
+            $(obj).removeClass('button-copy-status');
             setTimeout(()=>{
                 $(obj).removeClass('button-copy-fail');
+                $(obj).addClass('button-copy-status');
                 $(obj).text('');
             },1000);
         });

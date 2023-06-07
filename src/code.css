@@ -14,7 +14,7 @@
 .button-copy:hover{
     --button-color: var(--topan-colors-stress);
 }
-.button-copy::before{
+.button-copy-status::before{
     box-sizing: inherit;
     background-color: var(--button-color);
     content: "";
