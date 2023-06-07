@@ -14,7 +14,7 @@
 .button-copy:hover{
     --button-color: var(--topan-colors-stress);
 }
-.button-copy::before{
+.button-copy:not(.button-copy-success,.button-copy-fail)::before{
     box-sizing: inherit;
     background-color: var(--button-color);
     content: "";
@@ -30,4 +30,8 @@
     -webkit-mask-size: contain;
     mask-size: contain;
     transition: background-color .2s;
+}
+
+pre{
+    overflow-x: inherit;
 }
