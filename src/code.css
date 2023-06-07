@@ -32,6 +32,6 @@
     transition: background-color .2s;
 }
 
-pre{
+code{
     overflow-x: inherit;
 }
