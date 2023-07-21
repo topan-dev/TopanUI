@@ -9,6 +9,7 @@ input[type="text"],
     width: 100%;
     transition-duration: 0.28s;
     box-sizing: border-box;
+    outline: none;
 }
 select{
     border-radius: 10px;
